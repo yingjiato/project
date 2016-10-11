@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/js/activity.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/list.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/register.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/shopping_cart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/allbrand.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/baijiu.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/brandsale.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/fenye.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/heitiao.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/hongjiu.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/qita.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/timesale.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/todaynew.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json/yangjiu.json" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,90 @@
+[
+  [
+    {
+      "url":"img/timesale1_1.jpg",
+      "href":"#",
+      "name":"52°剑南春500ml*2",
+      "price":"￥698.00",
+      "bg":"background:#B81C22"
+    },
+    {
+      "url":"img/timesale1_2.jpg",
+      "href":"#",
+      "name":"52°五粮液永不分离精品500ml（6瓶装）",
+      "price":"￥149.00",
+      "bg":"background:#B81C22"
+    },
+    {
+      "url":"img/timesale1_3.jpg",
+      "href":"#",
+      "name":"43°茅台迎宾酒500ml*6",
+      "price":"￥289.00",
+      "bg":"background:#B81C22"
+    },
+    {
+      "url":"img/timesale1_4.jpg",
+      "href":"#",
+      "name":"52°出口型白西凤绵柔凤香型 500ml*6",
+      "price":"￥399.00",
+      "bg":"background:#B81C22"
+    },
+    {
+      "url":"img/timesale1_5.jpg",
+      "href":"#",
+      "name":"拉菲传奇波尔多 750ml*6",
+      "price":"￥359.00",
+      "bg":"background:#B81C22"
+    },
+    {
+      "url":"img/timesale1_6.jpg",
+      "href":"#",
+      "name":"龙船康帝波尔多红葡萄酒 750ml*6",
+      "price":"￥199.00",
+      "bg":"background:#B81C22"
+    }
+  ],
+  [
+    {
+      "url":"img/timesale2_1.jpg",
+      "href":"#",
+      "name":"53°国台·好礼 500ml*2（礼盒装）",
+      "price":"￥288.00",
+      "bg":"background:#cccccc"
+    },
+    {
+      "url":"img/timesale2_2.jpg",
+      "href":"#",
+      "name":"53°茅台王子酒（旧包装） 500ml（6瓶装）",
+      "price":"￥529.00",
+      "bg":"background:#cccccc"
+    },
+    {
+      "url":"img/timesale2_3.jpg",
+      "href":"#",
+      "name":"拉菲传奇波尔多 750ml*6",
+      "price":"￥359.00",
+      "bg":"background:#cccccc"
+    },
+    {
+      "url":"img/timesale2_4.jpg",
+      "href":"#",
+      "name":"53°玻璃瓶汾酒 475ml 玻璃汾*6",
+      "price":"￥239.00",
+      "bg":"background:#cccccc"
+    },
+    {
+      "url":"img/timesale2_5.jpg",
+      "href":"#",
+      "name":"52°五粮液华彩人生10典藏500ml*6",
+      "price":"￥298.00",
+      "bg":"background:#cccccc"
+    },
+    {
+      "url":"img/timesale2_6.jpg",
+      "href":"#",
+      "name":"53°一道泓酱香传奇 1000ml*2",
+      "price":"￥149.00",
+      "bg":"background:#cccccc"
+    }
+  ]
+]

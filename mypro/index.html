@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="css/diff.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/success.js"></script>
+    <script src="js/cookie.js"></script>
+</head>
+<body>
+    <div id="weiboma"><a href="#"><img src="img/weiboerweima.png" /></a></div>
+    <div id="weixinma"><a href="#"><img src="img/weixinerweima.png" /></a></div>
+    <div class="fixed_side">
+        <ul>
+            <li><a href="#" id="first">有奖调查</a></li>
+            <li><a href="activity.html">今日上新</a></li>
+            <li><a href="#">中酒排行榜</a></li>
+            <li><a href="shopping_cart.html">购物车</a></li>
+            <li><a href="javascript:;" id="index_top">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="top"></div>
+    <div class="option">
+        <div class="layout">
+            <div class="left">
+                <ul>
+                    <li id="home"><a href="index.html">中酒首页</a></li>
+                    <li>Hi，欢迎来到中酒</li>
+                    <li><a href="#" id="change1"></a></li>
+                    <li><a href="#" style="color:red" id="change2"></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li id="me"><a href="#">我的中酒</a></li>
+                    <li id="phone"><a href="#">手机版</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li id="order">订购热线：<span class="red">400-798-9999</span></li>
+                    <li><a href="#" style="color:red">【重要公告】</a></li>
+                    <li><a href="#" id="weibo"><img src="img/weibo.png"></a></li>
+                    <li><a href="#" id="weixin"><img src="img/weixin.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <div class="layout">
+            <div class="logo">
+                <img src="img/index_logo.gif" id="index_logo"/>
+            </div>
+            <div class="mid">
+                <form>
+                    <input type="text"/>
+                    <button>搜索</button>
+                </form>
+                <ul class="hotsou">
+                    <li>热门搜搜：</li>
+                    <li><a href="#">买一赠一</a></li>
+                    <li><a href="#">新人特权</a></li>
+                    <li><a href="#">五粮液</a></li>
+                    <li><a href="#">茅台</a></li>
+                    <li><a href="#">国台</a></li>
+                    <li><a href="#">泸州老窖</a></li>
+                </ul>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="layout">
+            <ul id="nav_u1">
+                <li id="all">全部商品分类</li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">闪购</a></li>
+                <li><a href="#">白酒专场</a></li>
+                <li><a href="#">红酒专场</a></li>
+                <li><a href="#">青青稞酒</a></li>
+                <li><a href="#">美国优选</a></li>
+                <li><a href="#">新品驾到</a></li>
+                <li><a href="#">中酒资讯</a></li>
+                <li><a href="#">会员专区</a></li>
+            </ul>
+        </div>
+        <div class="navhide1">
+            <ul>
+                <li><a href="#"><img src="img/mingyou.png"/>名优白酒</a></li>
+                <li><a href="#"><img src="img/putaojiu.png"/>葡萄酒/红酒</a></li>
+                <li><a href="#"><img src="img/yangjiu.png"/>洋酒</a></li>
+                <li><a href="#"><img src="img/huangjiu.png"/>黄酒</a></li>
+                <li><a href="#"><img src="img/lipin.png"/>礼品专区</a></li>
+                <li><a href="#"><img src="img/hunqin.png"/>婚庆专用</a></li>
+            </ul>
+        </div>
+        <div class="navhide2"></div>
+    </div>
+
+    <div class="banner">
+        <ul id="ball">
+            <li><a href="activity.html"><img src="img/banner1.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner2.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner3.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner4.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner5.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner6.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner7.jpg" /></a></li>
+            <li><a href="activity.html"><img src="img/banner1.jpg" /></a></li>
+        </ul>
+        <ul id="btns">
+            <li style="opacity:1"><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+        </ul>
+    </div>
+
+    <div class="brand_sale">
+        <div class="layout">
+            <h1>
+                <span>品牌特卖</span>
+                <ul class="brand_tab">
+                    <li style="background:url(img/select.png) no-repeat;color:#ffffff;">推荐品牌</li>
+                    <li>国际品牌</li>
+                    <li>国内品牌</li>
+                </ul>
+            </h1>
+        </div>
+    </div>
+
+    <div class="time_sale">
+        <div class="layout">
+            <h1>
+                <span>限时抢购</span>
+                <i id="daojishi1"></i>
+                <i id="daojishi2" style="display:none"></i>
+                <ul class="time_tab">
+                    <li style="background:url(img/select.png) no-repeat;color:#ffffff;">当前抢购</li>
+                    <li>下期预告</li>
+                </ul>
+            </h1>
+        </div>
+    </div>
+
+    <div class="bj">
+        <div class="layout">
+            <h1>
+                <span>白酒</span>
+                <div class="bj_topr">
+                    <ul class="baijiu_tab">
+                        <li style="color:#B81C22">爆品推荐</li>
+                        <li>茅台</li>
+                        <li>五粮液</li>
+                        <li>酱香</li>
+                        <li>浓香</li>
+                        <li>清香</li>
+                        <li>更多</li>
+                    </ul>
+                    <img src="img/select1.png" class="select1"/>
+                </div>
+            </h1>
+            <div class="baijiu_l">
+                <ul class="baijiu_list">
+                    <li><a href="list.html">茅台</a></li>
+                    <li><a href="#">五粮液</a></li>
+                    <li><a href="#">泸州老窖</a></li>
+                    <li><a href="#">洋河</a></li>
+                    <li><a href="#">牛栏山</a></li>
+                    <li><a href="#">一道红</a></li>
+                    <li><a href="#">汾酒</a></li>
+                    <li><a href="#">天佑德</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="baijiu_cover">
+        <div class="layout">
+            <ul class="cover1">
+                <li><a href="#" id="bj1"><span>茅台</span></a></li>
+                <li><a href="#" id="bj2"><span>五粮液</span></a></li>
+                <li><a href="#" id="bj3"><span>汾酒</span></a></li>
+                <li><a href="#" id="bj4"><span>剑南春</span></a></li>
+                <li><a href="#" id="bj5"><span>小糊涂仙</span></a></li>
+                <li><a href="#" id="bj6"><span>一道泓</span></a></li>
+                <li><a href="#" id="bj7"><span>泸州老窖</span></a></li>
+                <li><a href="#" id="bj8"><span>天佑德</span></a></li>
+                <li><a href="#" id="bj9"><span>郎酒</span></a></li>
+                <li><a href="#" id="bj10"><span>洋河</span></a></li>
+                <li><a href="#" id="bj11"><span>西凤</span></a></li>
+                <li><a href="#" style="width:78px;" id="bj12"><span>牛栏山</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hj">
+        <div class="layout">
+            <h1>
+                <span>红酒</span>
+                <div class="hj_topr">
+                    <ul class="hongjiu_tab">
+                        <li style="color:#B81C22">热卖</li>
+                        <li>红葡萄酒</li>
+                        <li>白葡萄酒</li>
+                        <li>起泡酒</li>
+                        <li>特拉托</li>
+                        <li>中级庄</li>
+                        <li>更多</li>
+                    </ul>
+                    <img src="img/select1.png" class="select1"/>
+                </div>
+            </h1>
+            <div class="hongjiu_l">
+                <ul class="hongjiu_list">
+                    <li><a href="#">茅台</a></li>
+                    <li><a href="#">五粮液</a></li>
+                    <li><a href="#">泸州老窖</a></li>
+                    <li><a href="#">洋河</a></li>
+                    <li><a href="#">牛栏山</a></li>
+                    <li><a href="#">一道红</a></li>
+                    <li><a href="#">汾酒</a></li>
+                    <li><a href="#">天佑德</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hongjiu_cover">
+        <div class="layout">
+            <ul class="cover2">
+                <li><a href="#" id="hj1"><span>拉菲</span></a></li>
+                <li><a href="#" id="hj2"><span>特拉托</span></a></li>
+                <li><a href="#" id="hj3"><span>伊莎塔</span></a></li>
+                <li><a href="#" id="hj4"><span>普拉塔</span></a></li>
+                <li><a href="#" id="hj5"><span>乐船</span></a></li>
+                <li><a href="#" id="hj6"><span>奥德小教堂</span></a></li>
+                <li><a href="#" id="hj7"><span>袋鼠</span></a></li>
+                <li><a href="#" id="hj8"><span>奔富</span></a></li>
+                <li><a href="#" id="hj9"><span>美圣世家</span></a></li>
+                <li><a href="#" id="hj10"><span>通天</span></a></li>
+                <li><a href="#" id="hj11"><span>张裕</span></a></li>
+                <li><a href="#" style="width:78px;" id="hj12"><span>马爵</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="yj">
+        <div class="layout">
+            <h1>
+                <span>洋酒</span>
+                <div class="yj_topr">
+                    <ul class="yangjiu_tab">
+                        <li style="color:#B81C22">热卖</li>
+                        <li>伏特加</li>
+                        <li>朗姆酒</li>
+                        <li>威士忌</li>
+                        <li>更多</li>
+                    </ul>
+                    <img src="img/select1.png" class="select1"/>
+                </div>
+            </h1>
+            <div class="yangjiu_l">
+                <ul class="yangjiu_list">
+                    <li><a href="#">茅台</a></li>
+                    <li><a href="#">五粮液</a></li>
+                    <li><a href="#">泸州老窖</a></li>
+                    <li><a href="#">洋河</a></li>
+                    <li><a href="#">牛栏山</a></li>
+                    <li><a href="#">一道红</a></li>
+                    <li><a href="#">汾酒</a></li>
+                    <li><a href="#">天佑德</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="yangjiu_cover">
+        <div class="layout">
+            <ul class="cover3">
+                <li><a href="#" id="yj1"><span>芝华士</span></a></li>
+                <li><a href="#" id="yj2"><span>人头马</span></a></li>
+                <li><a href="#" id="yj3"><span>马爹利</span></a></li>
+                <li><a href="#" id="yj4"><span>百加得</span></a></li>
+                <li><a href="#" id="yj5"><span>百利甜</span></a></li>
+                <li><a href="#" id="yj6"><span>绝对伏特加</span></a></li>
+                <li><a href="#" id="yj7"><span>杰克丹尼</span></a></li>
+                <li><a href="#" id="yj8"><span>百龄坛</span></a></li>
+                <li><a href="#" id="yj9"><span>深蓝</span></a></li>
+                <li><a href="#" id="yj10"><span>红广场</span></a></li>
+                <li><a href="#" id="yj11"><span>蒙蒂娜天使</span></a></li>
+                <li><a href="#" style="width:78px;" id="yj12"><span>尊尼获加</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="qt">
+        <div class="layout">
+            <h1>
+                <span>其他</span>
+                <div class="qt_topr">
+                    <ul class="qita_tab">
+                        <li style="color:#B81C22">热卖</li>
+                        <li>预调酒</li>
+                        <li>黄酒</li>
+                        <li>酒具/礼盒</li>
+                        <li>更多</li>
+                    </ul>
+                    <img src="img/select1.png" class="select1"/>
+                </div>
+            </h1>
+            <div class="qita_l">
+                <ul class="qita_list">
+                    <li><a href="#">茅台</a></li>
+                    <li><a href="#">五粮液</a></li>
+                    <li><a href="#">泸州老窖</a></li>
+                    <li><a href="#">洋河</a></li>
+                    <li><a href="#">牛栏山</a></li>
+                    <li><a href="#">一道红</a></li>
+                    <li><a href="#">汾酒</a></li>
+                    <li><a href="#">天佑德</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="qita_cover">
+        <div class="layout">
+            <ul class="cover4">
+                <li><a href="#" id="qt1"><span>劲酒</span></a></li>
+                <li><a href="#" id="qt2"><span>沱牌</span></a></li>
+                <li><a href="#" id="qt3"><span>仙山露</span></a></li>
+                <li><a href="#" id="qt4"><span>澜爵</span></a></li>
+                <li><a href="#" id="qt5"><span>奔富</span></a></li>
+                <li><a href="#" id="qt6"><span>衡水老白干</span></a></li>
+                <li><a href="#" id="qt7"><span>红星</span></a></li>
+                <li><a href="#" id="qt8"><span>孔府家</span></a></li>
+                <li><a href="#" id="qt9"><span>酒鬼</span></a></li>
+                <li><a href="#" id="qt10"><span>华夏长城</span></a></li>
+                <li><a href="#" id="qt11"><span>通天</span></a></li>
+                <li><a href="#" style="width:78px;" id="qt12"><span>蒙蒂娜天使</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dls">
+        <div class="layout">
+            <dl>
+                <dt><img src="img/picdl1.png" /></dt>
+                <dd>
+                    <h2>品质保障</h2>
+                    <p>厂家直接 真品防伪</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/picdl2.png" /></dt>
+                <dd>
+                    <h2>酒类O2O</h2>
+                    <p>线上线下标准化</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/picdl3.png" /></dt>
+                <dd>
+                    <h2>7天无理由退货</h2>
+                    <p>拆封无条件退货</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/picdl4.png" /></dt>
+                <dd>
+                    <h2>快速安全</h2>
+                    <p>专业配送 安全送达</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/picdl5.png" /></dt>
+                <dd>
+                    <h2>百万口碑</h2>
+                    <p>400万用户的认可</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/picdl6.png" /></dt>
+                <dd>
+                    <h2>金牌服务</h2>
+                    <p>7*12小时贴心服务</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="guide">
+        <div class="layout">
+            <div class="guide_l">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">帮助中心</a></dd>
+                    <dd><a href="#">会员协议</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物配送</dt>
+                    <dd><a href="#">99免运费</a></dd>
+                    <dd><a href="#">配送说明</a></dd>
+                    <dd><a href="#">快递查询</a></dd>
+                    <dd><a href="#">验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">支付宝</a></dd>
+                    <dd><a href="#">银联 信用卡</a></dd>
+                    <dd><a href="#">在线支付9.9折</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">服务承诺</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">退换货政策</a></dd>
+                    <dd><a href="#">退换货流程</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><a href="#">真品防伪，四码合一</a></dd>
+                    <dd><a href="#">7天无条件退货</a></dd>
+                    <dd><a href="#">7*12小时贴心服务</a></dd>
+                    <dd><a href="#">30分钟快速响应</a></dd>
+                </dl>
+            </div>
+            <div class="guide_r">
+                <dl>
+                    <dt>手机中酒</dt>
+                    <dd><img src="img/sjzj.png" /></dd>
+                    <dd>下载移动客户端</dd>
+                </dl>
+                <dl>
+                    <dt>中酒微信</dt>
+                    <dd><img src="img/zjwx.png" /></dd>
+                    <dd>中酒官方微信</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="index_bottom">
+        <p>
+            <a href="#"> 关于中酒 &nbsp;</a> |
+            <a href="#">&nbsp; 媒体报道 &nbsp;</a> |
+            <a href="#">&nbsp; 商务合作 &nbsp;</a> |
+            <a href="#">&nbsp; 品牌入驻 &nbsp;</a> |
+            <a href="#">&nbsp; 加入中酒 &nbsp;</a> |
+            <a href="#">&nbsp; 商家加盟 &nbsp;</a> |
+            <a href="#">&nbsp; 联系我们 &nbsp;</a>
+        </p>
+    </div>
+    <div class="index_foot">
+        <div class="layout">
+            <p>
+                Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2 | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！
+            </p>
+            <p>
+                中酒时代酒业（北京）有限公司      地址：北京市朝阳区百子湾路16号百子园5号楼A单元106号    电话：010-87703553
+            </p>
+            <p>
+                <a href="#"><img src="img/index_foot1.png" /></a>
+                <a href="#"><img src="img/index_foot2.png" /></a>
+                <a href="#"><img src="img/index_foot3.png" /></a>
+                <a href="#"><img src="img/index_foot4.png" /></a>
+                <a href="#"><img src="img/index_foot5.png" /></a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

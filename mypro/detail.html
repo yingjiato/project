@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="css/diff.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/detail.js"></script>
+</head>
+<body>
+<div id="weiboma"><a href="#"><img src="img/weiboerweima.png" /></a></div>
+<div id="weixinma"><a href="#"><img src="img/weixinerweima.png" /></a></div>
+<div class="right_side">
+    <div class="left_choose">
+        <ul class="choose">
+            <li><a href="javascript:;">购物车</a><span id="shopping_car"></span></li>
+            <li><a href="javascript:;">收藏</a><span id="shoucang"></span></li>
+            <li><a href="javascript:;">优惠券</a><span id="youhuiquan"></span></li>
+            <li><a href="javascript:;">顶部</a><span id="totop"></span></li>
+        </ul>
+    </div>
+    <div class="right_content">
+        <div class="shopping_car">
+            <h2>
+                <img src="img/gwc.png" alt=""/>
+                <span>购物车</span>
+                <a href="javascript:;"></a>
+            </h2>
+            <div class="nogoods">
+                <p>购物车是空的，</p>
+                <p>赶快去挑选心仪的商品吧~</p>
+                <p><a href="index.html" style="color:#b81c22;">去首页看看</a></p>
+            </div>
+            <div class="hasgoods">
+                <div class="_top">
+                    <div class="cbox">
+
+                    </div>
+                    <div class="xiaoji">
+                        <p>小计:<span class="ttprice"></span></p>
+                    </div>
+                </div>
+                <div class="_bottom">
+                    <p>共计: <span class="ttnum"></span> 件商品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总额：<span class="ttprice"></span></p>
+                    <p>优惠：￥0.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合计：<span class="ttprice"></span></p>
+                    <p><a href="shopping_cart.html">去购物车结算</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="shoucang">
+            <h2>
+                <img src="img/sc.png" alt=""/>
+                <span>收藏</span>
+                <a href="javascript:;"></a>
+            </h2>
+        </div>
+        <div class="youhuiquan">
+            <h2>
+                <img src="img/yhq.png" alt=""/>
+                <span>优惠券</span>
+                <a href="javascript:;"></a>
+            </h2>
+            <dl>
+                <dt><h1>10元</h1></dt>
+                <dd>
+                    <p>有效期</p>
+                    <p>2016.09.01-09.30</p>
+                    <p>10元直减券</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><h1>10元</h1></dt>
+                <dd>
+                    <p>有效期</p>
+                    <p>2016.09.01-09.30</p>
+                    <p>10元直减券</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><h1>30元</h1></dt>
+                <dd>
+                    <p>有效期</p>
+                    <p>2016.09.01-09.30</p>
+                    <p>10元直减券</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><h1>30元</h1></dt>
+                <dd>
+                    <p>有效期</p>
+                    <p>2016.09.01-09.30</p>
+                    <p>10元直减券</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><h1>60元</h1></dt>
+                <dd>
+                    <p>有效期</p>
+                    <p>2016.09.01-09.30</p>
+                    <p>10元直减券</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><h1>60元</h1></dt>
+                <dd>
+                    <p>有效期</p>
+                    <p>2016.09.01-09.30</p>
+                    <p>10元直减券</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="top"></div>
+<div class="option">
+    <div class="layout">
+        <div class="left">
+            <ul>
+                <li id="home"><a href="index.html">中酒首页</a></li>
+                <li>Hi，欢迎来到中酒</li>
+                <li><a href="log_in.html" id="change1">请登录</a></li>
+                <li><a href="register.html" style="color:red" id="change2">注册</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li id="me"><a href="#">我的中酒</a></li>
+                <li id="phone"><a href="#">手机版</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li id="order">订购热线：<span class="red">400-798-9999</span></li>
+                <li><a href="#" style="color:red">【重要公告】</a></li>
+                <li><a href="#" id="weibo"><img src="img/weibo.png"></a></li>
+                <li><a href="#" id="weixin"><img src="img/weixin.png" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="search">
+    <div class="layout">
+        <div class="logo">
+            <img src="img/index_logo.gif" id="index_logo"/>
+        </div>
+        <div class="mid">
+            <form>
+                <input type="text"/>
+                <button>搜索</button>
+            </form>
+            <ul class="hotsou">
+                <li>热门搜搜：</li>
+                <li><a href="#">买一赠一</a></li>
+                <li><a href="#">新人特权</a></li>
+                <li><a href="#">五粮液</a></li>
+                <li><a href="#">茅台</a></li>
+                <li><a href="#">国台</a></li>
+                <li><a href="#">泸州老窖</a></li>
+            </ul>
+        </div>
+        <div class="right"></div>
+    </div>
+</div>
+
+<div class="nav">
+    <div class="layout">
+        <ul id="nav_u1">
+            <li id="all">全部商品分类</li>
+            <li><a href="#">商城</a></li>
+            <li><a href="#">闪购</a></li>
+            <li><a href="#">白酒专场</a></li>
+            <li><a href="#">红酒专场</a></li>
+            <li><a href="#">青青稞酒</a></li>
+            <li><a href="#">美国优选</a></li>
+            <li><a href="#">新品驾到</a></li>
+            <li><a href="#">中酒资讯</a></li>
+            <li><a href="#">会员专区</a></li>
+        </ul>
+    </div>
+    <div class="navhide1">
+        <ul>
+            <li><a href="#"><img src="img/mingyou.png"/>名优白酒</a></li>
+            <li><a href="#"><img src="img/putaojiu.png"/>葡萄酒/红酒</a></li>
+            <li><a href="#"><img src="img/yangjiu.png"/>洋酒</a></li>
+            <li><a href="#"><img src="img/huangjiu.png"/>黄酒</a></li>
+            <li><a href="#"><img src="img/lipin.png"/>礼品专区</a></li>
+            <li><a href="#"><img src="img/hunqin.png"/>婚庆专用</a></li>
+        </ul>
+    </div>
+    <div class="navhide2"></div>
+
+<div class="now_loca">
+    <div class="layout">
+        <p>当前位置：<a href="index.html">首页</a> > <a href="#">白酒</a> > <a href="#">五粮液</a> > 52°五粮液永不分离精品500ml（6瓶装）</p>
+    </div>
+</div>
+
+<div class="detail">
+    <div class="layout">
+        <div class="detail_l">
+            <div class="bigpic">
+                <img src="img/detail1.jpg" style="display:block"/>
+                <img src="img/detail2.jpg" />
+                <img src="img/detail3.jpg" />
+                <img src="img/detail4.jpg" />
+                <img src="img/detail5.jpg" />
+                <div class="lj"></div>
+                <div class="mask"></div>
+            </div>
+            <div class="smallpic">
+                <button id="prev1"></button>
+                <button id="next1"></button>
+                <div id="smallbox">
+                    <ul id="smallball">
+                        <li style="border:1px solid #ff0000"><a href="javascript:;"><img src="img/detail1.jpg" /></a></li>
+                        <li><a href="javascript:;"><img src="img/detail2.jpg" /></a></li>
+                        <li><a href="javascript:;"><img src="img/detail3.jpg" /></a></li>
+                        <li><a href="javascript:;"><img src="img/detail4.jpg" /></a></li>
+                        <li><a href="javascript:;"><img src="img/detail5.jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bianhao">
+               <p>商品编号：A0001454<a href="#javascript:;">收藏</a></p>
+
+            </div>
+            <div class="fangdajing">
+                <img src="img/detail1.jpg" style="display:block" id="oimg"/>
+                <img src="img/detail2.jpg" />
+                <img src="img/detail3.jpg" />
+                <img src="img/detail4.jpg" />
+                <img src="img/detail5.jpg" />
+            </div>
+        </div>
+        <div class="detail_c" id="sp11">
+            <h2 id="good_name">52°五粮液永不分离精品500ml（6瓶装）</h2>
+            <p>五粮液出品，优质浓香酒</p>
+            <dl class="detail_price">
+                <dt>中&nbsp;酒&nbsp;价：</dt>
+                <dd><b id="good_price">￥149.00</b></dd>
+                <dt>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销：</dt>
+                <dd>特价</dd>
+            </dl>
+            <dl class="detail_distri">
+                <dt>配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送：</dt>
+                <dd><b>全国</b>（个别地区除外）</dd>
+                <dt>库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存：</dt>
+                <dd><b>有货</b></dd>
+            </dl>
+            <dl class="detail_tips">
+                <dt>商品保证：</dt>
+                <dd>厂家直接供货，源头保真，首创四码合一防伪技术</dd>
+                <dt>温馨提示：</dt>
+                <dd>
+                    <ul>
+                        <li>1.满99在线支付享9.9折优惠；</li>
+                        <li>2.特价商品不能使用优惠券抵扣；</li>
+                        <li>3.满99元免运费</li>
+                        <li>4.七天无条件退货</li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="detail_op">
+                <div class="cho_num">
+                    <input type="text" value="1" id="shuliang"/>
+                    <a href="javascript:;" id="plus">+</a>
+                    <a href="javascript:;" id="minus">-</a>
+                </div>
+                <div class="cho_btn">
+                    <a href="javascript:;" id="tocar">加入购物车</a>
+                    <a href="#" id="tobuy">立即购买</a>
+                    （每个ID限量12套）
+                </div>
+            </div>
+        </div>
+        <div class="detail_r">
+            <div class="logo">
+                <img src="img/detail_r_logo.jpg" style="margin:0 auto"/>
+            </div>
+            <div class="grade">
+                <h3>会员评分</h3>
+                <p>
+                    <a href="javascrip:;"></a>
+                    <a href="javascrip:;"></a>
+                    <a href="javascrip:;"></a>
+                    <a href="javascrip:;"></a>
+                    <a href="javascrip:;"></a>
+                </p>
+                <img src="img/percent.png" />
+                <h3>会员购买率</h3>
+            </div>
+            <div class="app">
+                <img src="img/detail_r_app.png" style="margin:0 auto"/>
+                <p>下载中酒网手机客户端</p>
+                <p>随时抢美酒</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="detail_tab">
+    <div class="layout">
+        <div class="tab_l">
+            <div class="bought">
+                <h3>&nbsp;&nbsp;看过的本品还买过</h3>
+                <dl>
+                    <dt><img src="img/bought1.jpg" /></dt>
+                    <dd>
+                        <p><a href="#">45°十年老白汾酒 475ml</a></p>
+                        <p style="font-size:16px;color:#e6161d"><span>累计评价:1055</span>￥149.00</p>
+                        <p><a href="javascript:;" class="jiaru">加入购物车</a></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/bought1.jpg" /></dt>
+                    <dd>
+                        <p><a href="#">45°十年老白汾酒 475ml</a></p>
+                        <p style="font-size:16px;color:#e6161d"><span>累计评价:1055</span>￥149.00</p>
+                        <p><a href="javascript:;" class="jiaru">加入购物车</a></p>
+                    </dd>
+                </dl>
+                <dl style="border:none;">
+                    <dt><img src="img/bought1.jpg" /></dt>
+                    <dd>
+                        <p><a href="#">42°牛栏山陈酿 500ml（12瓶装）</a></p>
+                        <p style="font-size:16px;color:#e6161d"><span>累计评价:1055</span>￥149.00</p>
+                        <p><a href="javascript:;" class="jiaru">加入购物车</a></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="rank">
+                <h3>&nbsp;&nbsp;热销排行榜</h3>
+                <dl>
+                    <dt>
+                        <span>1</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>1</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>2</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>2</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>3</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>3</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>4</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>4</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>5</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>5</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>6</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>6</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>7</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>7</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>8</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>8</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>9</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>9</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                    <dt>
+                        <span>10</span><a href="#">42°牛栏山陈酿 500ml</a>
+                    </dt>
+                    <dd>
+                        <span>10</span>
+                        <a href="#">
+                            <img src="img/rank1.jpg" />
+                            <p class="name">42°牛栏山陈酿 500ml</p>
+                            <p class="pri">￥39.00</p>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="tab_r">
+            <div class="fixed_top">
+                <ul>
+                    <li><a href="javascript:;" style="color:#b81c22;border-bottom:0;background:#ffffff url(img/fixedtop_bg.png) no-repeat top center;">商品介绍</a></li>
+                    <li><a href="javascript:;">商品评价（93%）</a></li>
+                    <li><a href="javascript:;">中酒服务</a></li>
+                </ul>
+                <p>客户端首单<span>立减5元</span></p>
+            </div>
+            <div class="intro outerTab" style="display:block">
+                <ul>
+                    <li>品牌：五粮液</li>
+                    <li>香型：浓香型</li>
+                    <li>产地：河北邯郸</li>
+                    <li>原料：高粱、大米、糯米等</li>
+                    <li>酒精度：52度</li>
+                    <li>净含量：500ml*6</li>
+                </ul>
+                <h4><span>推荐活动&商品</span></h4>
+                <img src="img/tuijianhuodong.png" />
+                <h4><span>商品特点</span></h4>
+                <img src="img/tedian1.jpg" />
+                <img src="img/tedian2.jpg" />
+                <img src="img/tedian3.jpg" />
+            </div>
+            <div class="pingjia outerTab">
+                <div class="summary">
+                    <div class="rate">
+                        <p><b>93</b>%</p>
+                        好评率
+                    </div>
+                    <div class="pjlist">
+                        <a href="#">安全到达</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">质量好</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">服务态度好</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">质量好</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">安全到达</a>
+                        <a href="#">安全到达</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">质量好</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">服务态度好</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">服务态度好</a>
+                        <a href="#">包装结实</a>
+                        <a href="#">包装结实</a>
+                    </div>
+                </div>
+                <div class="allpj">
+                    <div class="pj_tab">
+                        <ul>
+                            <li><a href="javascript:;" style="color:#b81c22;border-bottom:0;background:#ffffff url(img/fixedtop_bg.png) no-repeat top center;">全部评价</a></li>
+                            <li><a href="javascript:;">好评（5236）</a></li>
+                            <li><a href="javascript:;">中评（361）</a></li>
+                            <li><a href="javascript:;">差评（35）</a></li>
+                        </ul>
+                    </div>
+                    <div class="quanbu innerTab" style="display:block;">
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/pingjiastar.png" /></p>
+                                <p class="row2">这是所有评价1</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/pingjiastar.png" /></p>
+                                <p class="row2">这是所有评价2</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="haoping innerTab">
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/pingjiastar.png" /></p>
+                                <p class="row2">这是好评1</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/pingjiastar.png" /></p>
+                                <p class="row2">这是好评2</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="zhongping innerTab">
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/zhongping.png" /></p>
+                                <p class="row2">这是中评1</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/zhongping.png" /></p>
+                                <p class="row2">这是中评2</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="chaping innerTab">
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/chaping.png" /></p>
+                                <p class="row2">这是差评</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/touxiang.png" />
+                            </dt>
+                            <dd>
+                                <p class="row1"><img src="img/chaping.png" /></p>
+                                <p class="row2">这是差评</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="service outerTab">
+                <h3>中酒服务</h3>
+                <img src="img/fuwu1.png" />
+                <img src="img/fuwu2.png" />
+                <img src="img/fuwu3.png" />
+                <img src="img/fuwu4.png" />
+                <img src="img/fuwu5.png" />
+                <img src="img/fuwu6.png" />
+                <img src="img/fuwu7.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dls">
+    <div class="layout">
+        <dl>
+            <dt><img src="img/picdl1.png" /></dt>
+            <dd>
+                <h2>品质保障</h2>
+                <p>厂家直接 真品防伪</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><img src="img/picdl2.png" /></dt>
+            <dd>
+                <h2>酒类O2O</h2>
+                <p>线上线下标准化</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><img src="img/picdl3.png" /></dt>
+            <dd>
+                <h2>7天无理由退货</h2>
+                <p>拆封无条件退货</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><img src="img/picdl4.png" /></dt>
+            <dd>
+                <h2>快速安全</h2>
+                <p>专业配送 安全送达</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><img src="img/picdl5.png" /></dt>
+            <dd>
+                <h2>百万口碑</h2>
+                <p>400万用户的认可</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><img src="img/picdl6.png" /></dt>
+            <dd>
+                <h2>金牌服务</h2>
+                <p>7*12小时贴心服务</p>
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="guide">
+    <div class="layout">
+        <div class="guide_l">
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#">帮助中心</a></dd>
+                <dd><a href="#">会员协议</a></dd>
+            </dl>
+            <dl>
+                <dt>购物配送</dt>
+                <dd><a href="#">99免运费</a></dd>
+                <dd><a href="#">配送说明</a></dd>
+                <dd><a href="#">快递查询</a></dd>
+                <dd><a href="#">验货与签收</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="#">货到付款</a></dd>
+                <dd><a href="#">支付宝</a></dd>
+                <dd><a href="#">银联 信用卡</a></dd>
+                <dd><a href="#">在线支付9.9折</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a href="#">服务承诺</a></dd>
+                <dd><a href="#">退款说明</a></dd>
+                <dd><a href="#">退换货政策</a></dd>
+                <dd><a href="#">退换货流程</a></dd>
+            </dl>
+            <dl>
+                <dt>服务保障</dt>
+                <dd><a href="#">真品防伪，四码合一</a></dd>
+                <dd><a href="#">7天无条件退货</a></dd>
+                <dd><a href="#">7*12小时贴心服务</a></dd>
+                <dd><a href="#">30分钟快速响应</a></dd>
+            </dl>
+        </div>
+        <div class="guide_r">
+            <dl>
+                <dt>手机中酒</dt>
+                <dd><img src="img/sjzj.png" /></dd>
+                <dd>下载移动客户端</dd>
+            </dl>
+            <dl>
+                <dt>中酒微信</dt>
+                <dd><img src="img/zjwx.png" /></dd>
+                <dd>中酒官方微信</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="index_bottom">
+    <p>
+        <a href="#"> 关于中酒 &nbsp;</a> |
+        <a href="#">&nbsp; 媒体报道 &nbsp;</a> |
+        <a href="#">&nbsp; 商务合作 &nbsp;</a> |
+        <a href="#">&nbsp; 品牌入驻 &nbsp;</a> |
+        <a href="#">&nbsp; 加入中酒 &nbsp;</a> |
+        <a href="#">&nbsp; 商家加盟 &nbsp;</a> |
+        <a href="#">&nbsp; 联系我们 &nbsp;</a>
+    </p>
+</div>
+<div class="index_foot">
+    <div class="layout">
+        <p>
+            Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2 | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！
+        </p>
+        <p>
+            中酒时代酒业（北京）有限公司      地址：北京市朝阳区百子湾路16号百子园5号楼A单元106号    电话：010-87703553
+        </p>
+        <p>
+            <a href="#"><img src="img/index_foot1.png" /></a>
+            <a href="#"><img src="img/index_foot2.png" /></a>
+            <a href="#"><img src="img/index_foot3.png" /></a>
+            <a href="#"><img src="img/index_foot4.png" /></a>
+            <a href="#"><img src="img/index_foot5.png" /></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
